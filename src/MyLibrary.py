@@ -140,43 +140,119 @@ class examples:
 
             if choice == "add" or choice == "1":
                 clear()
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.add(input_1, input_2)
                 print(f"Result: {result}")
 
             elif choice == "subtract" or choice == "2":
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.subtract(input_1, input_2)
                 print(f"Result: {result}")
 
             elif choice == "multiply" or choice == "3":
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.multiply(input_1, input_2)
                 print(f"Result: {result}")
 
             elif choice == "divide" or choice == "4":
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.divide(input_1, input_2)
                 print(f"Result: {result}")
 
             elif choice == "power" or choice == "5":
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.power(input_1, input_2)
                 print(f"Result: {result}")
 
             elif choice == "sqrt" or choice == "6":
-                input_1 = float(input(pygradientify.Colors.mystic("Number: ")))
+                try:
+                    input_1 = float(input(pygradientify.Colors.mystic("Number: ")))
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.sqrt(input_1)
                 print(f"Result: {result}")
 
             elif choice == "remainder" or choice == "7":
-                input_1 = float(input(pygradientify.Colors.mystic("First number: ")))
-                input_2 = float(input(pygradientify.Colors.mystic("Second number: ")))
+                try:
+                    input_1 = float(
+                        input(pygradientify.Colors.mystic("First number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
+                try:
+                    input_2 = float(
+                        input(pygradientify.Colors.mystic("Second number: "))
+                    )
+                except ValueError:
+                    print("Invalid input. Please enter a number.")
+                    return
                 result = operation.remainder(input_1, input_2)
                 print(f"Result: {result}")
 
